@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+	</title>
+	<style>
+		body {
+			background-color: #00CED1;
+			color: #0C1584;
+		}
+		h1 {
+			color: #0000FF;
+			font-family: monospace;
+			text-align: center;
+		}
+		table {
+			font-family: monospace;
+			font-weight: bold;
+		}
+	</style>
+</head>
+<body>
+	<h1>BOOK A SHOW - TICKET BOOKING</h1>
+	<table>
+		<tr>
+        <td>Name    </td>
+        <td><form id="form1"><input label for="Name" type="text" name="name" placeholder="Enter the Name"></td>
+    	</tr>
+    	<tr>
+        <td>Movie Name</td>
+        <td><input form="form1" type="text" name="moviename" placeholder="Movie Name" autocomplete="on"></td>
+    	</tr>
+    	<tr>
+    		<td>Circle</td>
+    		<td><select name="circle">
+    			<option value="circles"></option>
+    			<option value="circles">Silver</option>
+    			<option value="circles">Gold</option>
+    			<option value="circles">Platinum</option>
+    		</td>
+    	</tr>
+    	<tr>
+    		<td>Phone no</td>
+    		<td><input form="form1" type="text" autocomplete="on"  name="phone" pattern="[0-9]{10}" placeholder="Enter Mobile Number" maxlength="10"></td>
+    	</form>
+    	</tr>
+    	<tr>
+    		<td>Show date and time</td>
+    		<td><input form="form1" type="datetime-local" name="showdate" placeholder="mm/dd/yyyy --:-- --"></td>
+    	</tr>
+    	<tr>
+    		<td>No of Adults</td>
+    		<td><input form="form1" type="number" name="tickets" min="1" max="10"></td>
+    	</tr>
+    	<tr>
+    		<td>No of Childrens</td>
+    		<td><input form="form1" type="number" name="children" min="1" max="5"></td>
+    	</tr>
+    	<tr>
+    		<td><input type="submit" value="Book My Show"onclick="myFunction()"></input></td>
+    		<td><button type="button" onclick="myFunction1()" onclick="myFunction()">Reset</button></td>
+    	</tr>
+    	<h2>JavaScript Alert</h2>
+
+
+
+			<script>
+			function myFunction() {
+			  alert("Booking Successful");
+			}
+			function myFunction1() {
+			  document.getElementById("form1").reset();
+			}
+			</script>
+		
+		
+	</table>
+</body>
+</html>
